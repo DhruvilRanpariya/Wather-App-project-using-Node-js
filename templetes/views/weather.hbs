@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    <div class="body">
+        {{>navbar}}
+
+        <div class="searchBar">
+            <form class="search_form">
+                <input type="text" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+                <input type="submit" id="submitBtn" value="search">
+            </form>
+        </div>
+        <div class="tempInfo">
+            <div class="top_layer">
+                <p id="day"></p>
+                <p id="today_date"></p>
+            </div>
+            <div class="main_layer">
+                <p id="city_name">Get output soon..</p>
+                <div class="middle_layer data_hide">
+                    <p id="temp"><span>28.8</span> &deg; C</p>
+                    <p id="temp_status"><i class="fa-solid fa-cloud" style="color: #74C0FC;"></i></p>
+                </div>
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+    <script src="/js/main.js"></script>
+    <script>
+        
+
+
+
+        
+        getCurretdate()
+        getCurrentDay();
+    </script>
+</body>
+
+</html>

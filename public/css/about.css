@@ -1,0 +1,290 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Piazzolla", serif;;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+
+}
+
+.body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #1e272e;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: auto;
+}
+
+.icon {
+
+    padding: 0px 0px 0px 60px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.icon i {
+    font-size: 1.1rem;
+    gap: 10px;
+}
+.icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.snow {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.menu {
+    margin-left: auto;
+    padding-right: 60px;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li a:hover {
+    color: #35b1f4;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 0px 8px 0px 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    list-style-type: none;
+
+}
+
+/* ------- main */
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    gap: 90px;
+}
+
+.main-left {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+        row-gap: 35px;
+}
+
+.error_page{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.error_page  img{
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.errmsg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.errmsg h1{
+    letter-spacing: 0.7px;
+}
+
+.main-left h1 {
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    word-spacing: 1.3px;
+}
+.main-left p {
+    letter-spacing: 0.7px;
+    /* word-spacing: 1px; */
+}
+
+.main-left h1 span {
+    color: #0097e6;
+}
+
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    box-shadow: 0px 9px 6px -6px #000;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0px 9px 6px -6px #0097e6;
+}
+
+.fgr:hover{
+    box-shadow: 0px 9px 6px -6px #0097e6;
+
+}
+
+.main-right img {
+    height: 400px;
+    width: auto;
+}
+
+footer{
+    width: 100%;
+    margin-top: auto;
+    /* position: absolute; */
+
+}
+footer p {
+    /* margin: 0; */
+    background-color: #1e272e;
+   text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    /* bottom: 0; */
+     
+}
+
+
+/* -------------------- weather page style */
+.searchBar{
+    width: 60%;
+    position: relative;
+    margin: 100px auto;
+}
+
+.search_form input[type = "text"]{
+    width: 100%;
+    height: 70px;
+    padding: 5px 10px 5px 30px;
+    background-color: #1e272e;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    border-radius: 20px;
+    
+}
+::placeholder{
+color: #bfc1c8;
+padding-left: x0px;
+}
+
+.search_form input[type = "submit"]{
+   position: absolute;
+   width: 130px;
+   top: 5px;
+   bottom: 5px;
+   right: 5px;
+   border: none;
+   background-color: #0097e6;
+   padding: 0px 10px;
+   border-radius: 20px;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500; 
+     text-transform: uppercase;
+     cursor: pointer;
+
+}
+
+.tempInfo{
+    width: 450px;
+    margin: auto;
+    min-height: 250px;
+    background-color: #323544;
+    border-radius: 10px;
+    font-family: "roboto",sans-serif;
+    color: #fff;
+}
+
+.top_layer{
+    width: 100%;
+    height: 24%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.main_layer{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main_layer #city_name{
+    padding: 15px 0px 15px 25px;
+    color: #bfc1c8;
+    font-weight: 300px;
+    font-size: 40px;
+}
+
+.main_layer #city_name{
+    padding: 15px 0px 5px 25px;
+    color: #bfc1c8;
+    font-weight: 300px;
+    font-size: 40px;
+}
+ .middle_layer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 75px;
+    padding: 0px 30px 13px 30px;
+ }
+ .data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+ }
+
+ /* ------------------ slider  */
+ .main-right{
+    display: flex;
+}
+
+.main-right img{
+    height:400 ;
+    width:640 ;
+}
+
+
+.mySlides{
+   
+}

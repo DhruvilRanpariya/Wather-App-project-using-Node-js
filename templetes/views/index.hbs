@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    <div class="body">
+        {{>navbar}}
+
+        <div class="main">
+            <div class="main-left">
+                <p>Welcome to the Weather app</p>
+                <h1>Get The Letest <span>Weather</span> Info of Your City</h1>
+                <a href="/weather"> <button class="btn">Check now</button></a>
+            </div>
+            <div class="main-right">
+                {{!-- <button class="btnNex" onclick="plusDivs(-1)">&#10094;</button> --}}
+                <img class="mySlides" src="./img/bg1.png" alt="" style="img">
+                {{!-- <img class="mySlides" src="./img/bg2.svg" alt="" style="height: 400; width:645">
+                <img class="mySlides" src="./img/bg3.webp" alt="" style="height: 400; width:645"> --}}
+                {{!-- <button class="btnNex" onclick="plusDivs(1)">&#10095;</button> --}}
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

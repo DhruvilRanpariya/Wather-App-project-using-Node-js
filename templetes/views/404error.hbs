@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    
+    <div class="body">
+        {{>navbar}}
+
+        <div class="error_page">
+            <div class="errimg">
+               <figure class="">
+                    <img src="./img/404.jpg" alt="dhruv" title="Dhruv">
+               </figure>
+            </div>
+            <div class="errmsg">
+                <p>Welcome to thapa techincal world</p>
+                <h1>{{errorMsg}}</h1>
+                <a href="/"> <button class="btn">Go Back</button></a>
+            </div>
+            
+        </div>
+       {{>footer}}
+    </div>
+</body>
+
+</html>
